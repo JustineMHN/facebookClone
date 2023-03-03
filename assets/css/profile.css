@@ -1,0 +1,270 @@
+
+.profile-management{
+    width: 100%;
+    height: 580px;
+    top: 60px;
+    background-color: white;
+    margin: 0px auto;
+    margin-bottom: 180px;
+    
+}
+.profile-management-content{
+    width: 70%;
+    height: 100%;
+    margin: 0px auto;
+}
+.cover{
+    width: 100%;
+    height: 55%;
+    background-image: linear-gradient(to bottom, #edeff2, #eef0f3, #eef0f3, #eff1f4, #eff1f4, #e8eaed, #e0e2e5, #d9dbde, #c8cacd, #b7babb, #a7a9ab, #97999a);
+    margin: 0px auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.5px;
+    cursor: pointer;
+}
+.cover>.cover-image{
+    width: 100%;
+    height: 100%;
+    
+}
+.cover>.cover-image>img{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.add-cover-profile{
+    background-color: white;
+    padding: 5px 10px;
+    right: 10px;
+    bottom: 15px;
+    z-index: 1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.profile-general>.profile-picture{
+    left: 30px;
+    bottom: 20px;
+    width: 168px;
+    height: 168px;
+    padding-top: 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile-general>.profile-picture>#profile-picture-img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile-general>.profile-picture>#profile-picture-img>img{
+    width: 98%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile-general>.profile-picture>#camera-profile{
+    background-color: #e8eaed;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile-general>.profile-picture>#camera-profile>i{
+    font-size: 25px;
+}
+.profile-general>.profile-info{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.profile-general>.profile-info>h1{
+    margin: 0;
+    margin-top: 5px;
+}
+.profile-general>.profile-info>span{
+    color: #202020;
+    font-size: 18px;
+}
+.profile-general>.divider{
+    width: 65%;
+    margin: 0px auto;
+}
+.profile-select-users>img.user-picture{
+    margin-left: -8px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.profile-info-users>.profile-btn{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.profile-info-users>.profile-btn>.add-story-btn,
+.profile-info-users>.profile-btn>.update-profile-btn{
+    padding: 10px;
+    font-weight: normal;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.profile-info-users>.profile-btn>.add-story-btn{
+    background-color: #1a6ed8;
+    color: white;
+}
+.profile-btn>.update-profile-btn{
+    background-color: #eff1f4;
+    color: black;
+}
+.profile-info-users>.profile-btn>.add-story-btn>#fa-plus{
+    background-color: white;
+    padding: 3px 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile-info-users>.profile-btn>.add-story-btn>#fa-plus>i{
+    color: #1a6ed8;
+}
+.profile-nav{
+    white-space: nowrap;
+}
+.profile-nav>.unlisted>li{
+    line-height: 30px;
+    text-overflow: clip;
+}
+.profile-nav>.unlisted>li>a{
+    color: #828386;
+    font-weight: bold;
+    padding: 10px;
+}
+.profile-nav>.unlisted>li>a:not(.active):hover{
+    background-color: #e0e2e5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.profile-nav>.unlisted>li>a.active{
+    color: #1a6ed8;
+    border-bottom: 3px solid #1a6ed8;
+}
+.profile-menu{
+    text-align: end;
+    margin-right: 40px;
+}
+.profile-menu>i{
+    padding: 15px;
+    background-color: #e0e2e5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.profile-menu>a.plus{
+    visibility: hidden;
+   
+}
+/* *********************************RESPONSIVE*************************** */
+/*************** VERSION MOBILE************************************ */
+
+@media screen and (max-width: 1099px) {
+    .profile-management-content{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .profile-management-content{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 899px) {
+    .profile-management{
+        height: 610px;
+    }
+    .profile-management-content{
+        width: 100%;
+        height: 70%;
+    }
+    .profile-general{
+        flex-direction: column;
+        gap: 0;
+    }
+    .profile-general>.profile-picture{
+        left: 35%;
+        bottom: 80px;
+    }
+    
+    .profile-general>.profile-info{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 90px;
+        padding-top: 10px;
+    }
+    .profile-info-users{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .profile-general-ma>.divider{
+        position: relative;
+        bottom: 60px;
+        left: 15px;
+    }
+    .profile-nav{
+        margin-top: -62px;
+    }
+    .add-cover-profile.acp{
+        display: block;
+    }
+    .add-cover-profile:not(.acp){
+        display: none;
+    }
+    .profile-nav>.unlisted>li>a{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 695px) {
+
+    .profile-nav>.unlisted>li>a:not(.active){
+        display: none;
+    }
+    .profile-menu>a.plus{
+        visibility: visible;
+        font-weight: bold;
+        padding-right: 20px;
+    }
+}

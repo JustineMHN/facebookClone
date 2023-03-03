@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Justbook</title>
+</head>
+<body>
+    <div class="container-accueil">
+        <header class="accueil-header flex flex-center gap-20 p-10 box-h fixed">
+            <div class="content-header-left flex-1 flex gap-10">
+                <img src="/assets/images/logo/Facebook_Logo_(2019).png" alt="logo" width="40px" height="40px">
+                <i class="fas fa-search flex-1 none" id="search-icon"></i>
+                <i class="fas fa-bars   flex-1 none" id="bars-icon-left"></i>
+                <div class="content-header-left-search flex flex-1 flex-center">
+                    <i class="fas fa-search flex-1 absolute "></i>
+                    <input type="search" placeholder="Rechercher sur facebook" class="flex-2">
+                </div>
+            </div>
+            <div class="content-header-center-icons flex-3 flex ">
+                <i class="fas fa-home     flex-1"></i>
+                <i class="fa-solid fa-display flex-1"></i>
+                <i class="fas fa-store     flex-1"></i>
+                <i class="fas fa-users     flex-1"></i>
+                <i class="fas fa-bars   flex-1 none" id="bars-icon-center"></i>
+                <i class="fas fa-gamepad     flex-1"></i>
+            </div>
+            <div class="content-header-right flex-2 flex gap-20 flex-center">
+                <div class="user-profile flex-1 flex gap-5 flex-center" >
+                    <img src="/assets/images/profile/justine.jpg" alt="user-image" width="35px" height="35px">
+                    <span class="user-name">Justine</span>
+                </div>
+                <div class="content-header-right-icons flex-2 flex flex-center gap-20">
+                    <i class="fas fa-plus    none" id="plus-icon-right"></i>
+                    <i class="fas fa-list-ul    ctr-icons "></i>
+                    <i class="fa-brands fa-facebook-messenger "></i>
+                    <i class="fas fa-bell     "></i>
+                    <a href="/profile.html"><i class="fa-solid fa-sort-down "></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="accueil-content">
+            <aside class="accueil-aside-left fixed"> 
+                <nav class="navbar flex flex-column gap-5">
+                    <ul class="unlisted flex flex-column gap-30">
+                        <li class="nav-item">
+                            <a href="/profile.html" class="nav-link flex-center-v">
+                                <img src="/assets/images/profile/justine.jpg" alt="user-image" width="35px" height="35px">
+                                <span class="bold">Justine Mehounou</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Amis</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Groupes</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-store "></i>
+                                <span>Marketplace</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-display"></i>
+                                <span>Watch</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-history "></i>
+                                <span>Souvenirs</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <span>Enregistrements</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-flag"></i>
+                                <span>Pages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-calendar-minus    "></i>
+                                <span>Evenements</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-calendar-week"></i>
+                                <span>Plus recents</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" >
+                            <a href="#" class="nav-link" id="li-voir-plus">
+                                <i class="fas fa-angle-down    "></i>
+                                <span>Voir plus</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="unlisted flex flex-column gap-30 " id="ul-voir-plus">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-flag"></i>
+                                <span>Pages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-calendar-minus    "></i>
+                                <span>Evenements</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-calendar-week"></i>
+                                <span>Plus recents</span>
+                            </a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-bookmark"></i>
+                                <span>Enregistrements</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-flag"></i>
+                                <span>Pages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-calendar-minus    "></i>
+                                <span>Evenements</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-calendar-week"></i>
+                                <span>Plus recents</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Amis</span>
+                            </a>
+                        </li>
+                        <li class="nav-item " >
+                            <a href="#" class="nav-link" id="li-voir-moins">
+                                <i class="fas fa-angle-up    "></i>
+                                <span>Voir moins</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav> 
+                <div class="divider"></div>
+                <div class="accueil-aside-left-footer flex flex-column gap-10">
+                    <div class="accueil-aside-left-footer-header flex gap-20">
+                        <h4>Vos raccourcis</h4>
+                        <a href="#"  id="lien-modifier">Modifier</a>
+                    </div>
+                    <div class="accueil-aside-left-footer-center flex flex-center-v gap-5">
+                        <img src="/assets/images/poster/280451229_369014028587640_5780518010516950625_n.jpg" alt="Raccourcis" width="30px" height="30px">
+                        <span>Amazone du Bénin</span>
+                    </div>
+                    <div class="accueil-aside-left-footer-infos">
+                        <ul class="unlisted flex gap-5 wrap">
+                            <li><a href="#">Confidentialité &ThinSpace;</a></li>
+                            <li><a href="#"><span class="dot">&dot;</span> &ThinSpace; Conditions générales <span class="dot">&dot;</span></a></li>
+                            <li><a href="#">&ThinSpace; Publicité &ThinSpace;<span class="dot">&dot;</span></a></li>
+                            <li><a href="#">Choix publicitaires &copy;&ThinSpace;</a></li>
+                            <li><a href="#"><span class="dot">&dot;</span>&ThinSpace;  Cookies &dot;</a></li>
+                            <li><a href="#">Plus <span class="dot">&dot;</span> &ThinSpace;</a></li>
+                            <li>&ThinSpace;Meta &COPY; 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <div class="accueil-content-center col-sm col-m col-xl">
+                <div class="accueil-content-center-statut relative flex gap-5">
+                    <div class="create-storie relative">
+                        <div class="storie-user-picture"><img src="/assets/images/profile/justine.jpg" alt="user-picture"></div>
+                        <div class="btn-plus absolute"><i class="fas fa-plus    "></i></div>
+                        <div class="create absolute">Créer une story</div>
+                    </div>
+                    <div class="statuts-items flex-1">
+                        <div class="create-storie relative ">
+                            <div class="users-stories"><img src="/assets/images/profile/justine.jpg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/user2.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/user3.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/robe chemise.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>                      
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/robe choc manche courte.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/robe de soirée chic.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/user4.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>                      
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/user5 .jpg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/user6.jpg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/user3.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/robe chemise.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>                      
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/robe choc manche courte.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/robe de soirée chic.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>
+                        <div class="create-storie relative">
+                            <div class="users-stories"><img src="/assets/images/profile/user4.jpeg" alt="user-picture"></div>
+                            <div class="user-poster-name absolute">Justine Mehounou</div>
+                        </div>  
+
+                    </div>
+                    <div class="btn-right absolute"><i class="fas fa-arrow-right    "></i></div>
+                </div>
+                <div class="accueil-content-center-publicize">
+                    <div class="accueil-content-center-publicize-header flex ">
+                        <img src="/assets/images/profile/justine.jpg" alt="user-picture" width="40px" height="40px" class="user-picture">
+                        <input type="text" placeholder="Quoi de neuf, Justine ?">
+                    </div>
+                    <div class="divider"></div>
+                    <div class="accueil-content-center-publicize-icons flex gap-20">
+                        <div class="accueil-content-center-publicize-icon flex-1 flex gap-5"><i class="fas fa-video    "></i>Vidéo en direct</div>
+                        <div class="accueil-content-center-publicize-icon flex-1 flex gap-5"><i class="fas fa-images    "></i>Photo/vidéo</div>
+                        <div class="accueil-content-center-publicize-icon flex-1 flex gap-5"><i class="fas fa-smile    "></i>Humeur/Activité</div>
+                    </div>
+                </div>
+                <div class="accueil-content-center-salon relative flex gap-20 p-10">
+                    <div class="create-salon flex-1"><i class="fas fa-video-slash    "></i> Créer un salon</div>
+                    <div class="select-users flex-2">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/poster/280451229_369014028587640_5780518010516950625_n.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/poster/280451229_369014028587640_5780518010516950625_n.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/poster/280451229_369014028587640_5780518010516950625_n.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                    </div>
+                    <div class="icon-angle-right absolute"><i class="fas fa-angle-right btn-right" id="next-icon-salon"></i></div>
+                </div>
+                <div class="accueil-content-center-posters-container">
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/profile/justine.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Communauté Chrétienne</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-center">
+                            Anonyme <br> Mon époux pasteur ne me satisfait plus, il est tout le temps en retraite spirituelle, que faire ?
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart none"></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart none"></i>
+                                    <i class="fa-solid fa-face-laugh-squint"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/profile/justine.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Communauté Chrétienne</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-video text-center">
+                            <div class="poster-center-text">Mention spéciale à nos nouveaux super fans !
+                                Bienvenue dans la Famille ici règne l’AMOUR du prochain merci d’être là avec nous ♥️
+                            </div>
+                            <div class="poster-center-video">
+                                <video controls >
+                                    <source src="/assets/videos/puppet_-_1405 (Original).mp4" type="video/mp4">
+                                    Sorry, your browser doesn't support embedded videos.
+                                </video>
+                            </div>
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart "></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart none"></i>
+                                    <i class="fa-solid fa-face-laugh-squint none"></i>
+                                    <i class="fa-solid fa-face-hushed"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/poster/280451229_369014028587640_5780518010516950625_n.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Les amazones</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-image text-center">
+                            <div class="poster-center-text">La statue érigée derrière la Présidence est la représentation de l'Amazone, identité visuelle choisie par le Bénin en 2019, dans le cadre des réformes pour le développement touristique.  #wasexo <a href=""> https://bit.ly/3yBm1NL</a>
+                            </div>
+                            <div class="poster-center-image">
+                                <img src="/assets/images/poster/280451229_369014028587640_5780518010516950625_n.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart "></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart"></i>
+                                    <i class="fa-solid fa-face-laugh-squint none"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/poster/280451229_369014028587640_5780518010516950625_n.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Amazone du Bénin</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-image text-center">
+                            <div class="poster-center-text">Bonne nouvelle 
+                                Pour tous ceux qui n'ont pas encore eu l'occasion de visiter l'exposition des 26 trésors royaux et des œuvres contemporaines à la Présidence de la République du Bénin 
+                                Clôture ce jour et Réouverture le 15 juillet 2022 pour 45 jours
+                                Plus de 180mille visiteurs en moins de 40 jours👏👏👏👏
+                                Vacanciers ,à vos marques 🏃‍♂️🏃‍♂️🏃‍♂️🏃‍♂️🏃‍♂️                                
+                            </div>
+                            <div class="poster-center-image">
+                                <img src="/assets/images/poster/trone.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart "></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart"></i>
+                                    <i class="fa-solid fa-face-laugh-squint none"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/poster/280451229_369014028587640_5780518010516950625_n.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Amazone du Bénin</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-image text-center">
+                            <div class="poster-center-text">Paris dévoile Solitude, sa première statue en l’honneur d’une femme noire.
+                                À l’occasion de la Journée nationale des mémoires de la traite, de l’esclavage et de leurs abolitions, Anne Hidalgo, maire de Paris, a inauguré Solitude, la première statue en l'honneur d'une femme noire.
+                                Rosalie, surnommée Solitude, est une figure emblématique en Guadeloupe. Celle qui a combattu le rétablissement de l’esclavage aux Antilles par Bonaparte avait été capturée enceinte lors de la défaite des Insurgés de Guadeloupe. Condamnée pour actes de rébellion, elle fut exécutée en novembre 1802, au lendemain de son accouchement. Elle avait 22 ans.
+                            </div>
+                            <div class="poster-center-image">
+                                <img src="/assets/images/poster/statut-paris-femme-enceinte.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart "></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart"></i>
+                                    <i class="fa-solid fa-face-laugh-squint none"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/profile/justine.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Communauté Chrétienne</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-center">
+                            Anonyme <br> Mon époux pasteur ne me satisfait plus, il est tout le temps en retraite spirituelle, que faire ?
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart none"></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart none"></i>
+                                    <i class="fa-solid fa-face-laugh-squint"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/profile/justine.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Communauté Chrétienne</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-center">
+                            Anonyme <br> Mon époux pasteur ne me satisfait plus, il est tout le temps en retraite spirituelle, que faire ?
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart none"></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart none"></i>
+                                    <i class="fa-solid fa-face-laugh-squint"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/profile/justine.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Communauté Chrétienne</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-center">
+                            Anonyme <br> Mon époux pasteur ne me satisfait plus, il est tout le temps en retraite spirituelle, que faire ?
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart none"></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart none"></i>
+                                    <i class="fa-solid fa-face-laugh-squint"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/profile/justine.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Communauté Chrétienne</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-center">
+                            Anonyme <br> Mon époux pasteur ne me satisfait plus, il est tout le temps en retraite spirituelle, que faire ?
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart none"></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart none"></i>
+                                    <i class="fa-solid fa-face-laugh-squint"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/profile/justine.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Communauté Chrétienne</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-center">
+                            Anonyme <br> Mon époux pasteur ne me satisfait plus, il est tout le temps en retraite spirituelle, que faire ?
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart none"></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart none"></i>
+                                    <i class="fa-solid fa-face-laugh-squint"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/profile/justine.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Communauté Chrétienne</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-center">
+                            Anonyme <br> Mon époux pasteur ne me satisfait plus, il est tout le temps en retraite spirituelle, que faire ?
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart none"></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart none"></i>
+                                    <i class="fa-solid fa-face-laugh-squint"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accueil-content-center-posters">
+                        <div class="accueil-content-center-posters-header flex gap-10 p-10">
+                            <img src="/assets/images/profile/justine.jpg" alt="user-picture" class="user-picture" width="40px" height="40px">
+                            <div class="accueil-content-center-posters-header-info flex-1">
+                                <span class="user-name bold">Communauté Chrétienne</span>
+                                <div class="poster-time-publish">3h <span class="dot">&dot;</span>&ThinSpace;<i class="fas fa-globe    "></i></div>
+                            </div>
+                            <div class="ellipsis-h right"> <i class="fas fa-ellipsis-h    "></i></div>
+                        </div>
+                        <div class="accueil-content-center-posters-center text-center">
+                            Anonyme <br> Mon époux pasteur ne me satisfait plus, il est tout le temps en retraite spirituelle, que faire ?
+                        </div>
+                        <div class="accueil-content-center-posters-infos-container">
+                            <div class="accueil-content-center-posters-infos flex gap-20">
+                                <div class="posters-infos-icons flex gap-5">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart none"></i>
+                                    <i class="fa-solid fa-face-kiss-wink-heart none"></i>
+                                    <i class="fa-solid fa-face-laugh-squint"></i>
+                                    <i class="fa-solid fa-face-hushed none"></i>
+                                    <i class="fa-solid fa-face-sad-tear none"></i>
+                                    <i class="fa-solid fa-face-angry none"></i>
+                                    <div class="like-nth">559</div>
+                                </div>
+                                <div class="posters-info right flex-1 flex gap-10">
+                                    <div class="commentaires">320 commentaires</div>
+                                    <div class="partages">12 partages</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="accueil-content-center-posters-footer flex gap-10">
+                                <div class="like flex-1 text-center bold"><i class="fa-solid fa-thumbs-up"></i> J'aime</div>
+                                <div class="comments flex-1 text-center bold"><i class="fa-solid fa-message"></i> Commenter</div>
+                                <div class="share flex-1 text-center bold"><i class="fa-solid fa-share-from-square"></i> Partager</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="accueil-aside-right fixed">
+                <div class="aside-right-invitations">
+                    <div class="accueil-aside-left-footer-header flex gap-20">
+                        <h4>Invitations</h4>
+                        <a href="#"  id="lien-modifier">Modifier</a>
+                    </div>
+                    <div class="invitations-users relative">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="40px" height="40px" class="user-picture">
+                        <span class="name absolute">Kintonou Jacques</span>
+                        <span class="time right">3 sem</span>
+                        <div class="add-delete-btn ">
+                            <button id="confirmer">Confirmer</button>
+                            <button id="delete">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="anniversaires">
+                    <div class="accueil-aside-left-footer-header flex gap-20">
+                        <h4>Anniversaire</h4>
+                    </div>
+                    <div class="anniversaire-infos">
+                        <i class="fa fa-gift" aria-hidden="true"></i>
+                        <span>C'est l'anniversaire de <strong>Justine Mehounou</strong>  et <strong>9  autres personnes</strong> aujourd'hui.</span>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="contacts">
+                    <div class="accueil-aside-left-footer-header flex gap-20">
+                        <h4>Contacts</h4>
+                        <div class="contact-icons flex-1 flex gap-20">
+                            <i class="fas fa-video    "></i>
+                            <i class="fas fa-search    "></i>
+                            <i class="fas fa-ellipsis-h    "></i>     
+                        </div>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center-v"> Justine Mehounou</span>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center-v"> Justine Mehounou</span>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center-v"> Justine Mehounou</span>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center-v"> Justine Mehounou</span>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center-v"> Justine Mehounou</span>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center-v"> Justine Mehounou</span>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center-v"> Justine Mehounou</span>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="conversations-de-groupe">
+                    <div class="accueil-aside-left-footer-header flex gap-20">
+                        <h4>Conversations de groupe</h4>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center"> FC-Robotics Clubs Leads</span>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center"> FC-Technovation Team Bénin</span>
+                    </div>
+                    <div class="en-ligne flex gap-10">
+                        <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture"> 
+                        <span class="flex flex-center"> Femcoders leads</span>
+                    </div>
+                    <div class="create-group"><i class="fas fa-plus    "></i> Créer un nouveau groupe </div>
+                </div>
+                
+            </aside>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/listener.js"></script>
+</body>
+</html>

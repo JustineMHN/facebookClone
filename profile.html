@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="container-accueil">
+        <header class="accueil-header flex flex-center gap-20 p-10 box-h fixed">
+            <div class="content-header-left flex-1 flex gap-10">
+                <img src="/assets/images/logo/Facebook_Logo_(2019).png" alt="logo" width="40px" height="40px">
+                <i class="fas fa-search flex-1 none" id="search-icon"></i>
+                <i class="fas fa-bars   flex-1 none" id="bars-icon-left"></i>
+                <div class="content-header-left-search flex flex-1 flex-center">
+                    <i class="fas fa-search flex-1 absolute "></i>
+                    <input type="search" placeholder="Rechercher sur facebook" class="flex-2">
+                </div>
+            </div>
+            <div class="content-header-center-icons flex-3 flex ">
+                <i class="fas fa-home     flex-1"></i>
+                <i class="fa-solid fa-display flex-1"></i>
+                <i class="fas fa-store     flex-1"></i>
+                <i class="fas fa-users     flex-1"></i>
+                <i class="fas fa-bars   flex-1 none" id="bars-icon-center"></i>
+                <i class="fas fa-gamepad     flex-1"></i>
+            </div>
+            <div class="content-header-right flex-2 flex gap-20 flex-center">
+                <div class="user-profile flex-1 flex gap-5 flex-center" >
+                    <img src="/assets/images/profile/justine.jpg" alt="user-image" width="35px" height="35px">
+                    <span class="user-name">Justine</span>
+                </div>
+                <div class="content-header-right-icons flex-2 flex flex-center gap-20">
+                    <i class="fas fa-plus    none" id="plus-icon-right"></i>
+                    <i class="fas fa-list-ul    ctr-icons "></i>
+                    <i class="fa-brands fa-facebook-messenger "></i>
+                    <i class="fas fa-bell     "></i>
+                    <i class="fa-solid fa-sort-down "></i>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="profile-management relative box-h">
+        <div class="profile-management-content">
+            <div class="cover relative">
+                <input type="file" name="files" id="file-cover" accept=".jpeg, .jpg, .png, .gif" class="none">
+                <div class="cover-image"><!-- <img src="/assets/images/poster/sofitel-hotel.jpg" alt=""> --></div>
+                <div class="add-cover-profile acp absolute none"> <i class="fas fa-camera "></i></div>
+                <div class="add-cover-profile absolute flex gap-5">
+                    <i class="fas fa-camera "></i>Ajouter une photo de couverture
+                </div>
+            </div>
+            <div class="profile-general-ma flex flex-column">
+                <div class="profile-general flex gap-40">
+                    <div class="profile-picture relative">
+                        <input type="file" name="files" id="file-profile" accept=".jpeg, .jpg, .png, .gif" class="none">
+                        <div id="profile-picture-img"><img src="/assets/images/profile/justine.jpg" alt="profile" ></div>
+                        <div id="camera-profile"><i class="fas fa-camera "></i></div>
+                    </div>
+                    <div class="profile-info flex-1 flex flex-column gap-5 ">
+                        <h1>Justine Mehounou</h1>
+                        <span>4k amis</span>
+                        <div class="profile-info-users relative flex gap-20 flex-center no-wrap">
+                            <div class="profile-select-users flex-2 flex no-wrap">
+                                <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture">
+                                <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture">
+                                <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture">
+                                <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture">
+                                <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture">
+                                <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture">
+                                <img src="/assets/images/profile/justine.jpg  " alt=""  width="30px" height="30px" class="user-picture">
+                                <img src="/assets/images/poster/280451229_369014028587640_5780518010516950625_n.jpg  " alt=""  width="30px" height="30px" class="user-picture">
+                            </div>
+                            <div class="profile-btn flex gap-20">
+                                <div class="add-story-btn flex gap-10">
+                                    <div id="fa-plus" class="flex flex-center"><i class="fas fa-plus"></i></div>Ajouter à la story
+                                </div>
+                                <div class="update-profile-btn flex gap-5">
+                                    <div id="fa-pen"><i class="fas fa-pen"></i></div> Modifier le profil
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="profile-nav flex flex-center gap-40">
+                    <ul class="unlisted flex gap-10">
+                        <li class="nav-item "><a href="#" class="nav-link active">Publications</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">A propos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Amis</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Photos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Vidéos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Lieux</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Plus <i class="fas fa-sort-down    "></i></a></li>
+                    </ul>
+                    <div class="profile-menu flex-2 ">
+                        <a href="#" class="nav-link plus">Plus <i class="fas fa-sort-down    "></i></a>
+                        <i class="fas fa-ellipsis-h    "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="/assets/js/profile.js"></script>
+    <script src="/assets/js/scriptprofile.js"></script>
+</body>
+</html>
